@@ -7,7 +7,6 @@
     "start:test": "cross-env NODE_ENV=development BASE_ENV=test webpack-dev-server -c build/webpack.dev.js",
     "start:uat": "cross-env NODE_ENV=development BASE_ENV=uat webpack-dev-server -c build/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack -c build/webpack.prod.js",
-    "build:github": "cross-env NODE_ENV=production BASE_NAME=/react-ts-starter webpack -c build/webpack.prod.js",
     "build:analyse": "webpack -c build/webpack.analyse.js",
     "lint": "eslint --ext  .js,.ts,.tsx src",
     "lint:style": "stylelint src/**/*.{css,less}",
