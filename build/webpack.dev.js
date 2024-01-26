@@ -8,7 +8,7 @@ const { launchEditorMiddleware } = require('react-dev-inspector/plugins/webpack'
 // 合并公共配置,并添加开发环境配置
 module.exports = merge(commonConfig, {
   mode: 'development',
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'source-map',
   devServer: {
     port: 5555, //
     compress: false, // gzip压缩,开发环境不开启,提升热更新速度

@@ -9,8 +9,6 @@ const InspectorWrapper = process.env.NODE_ENV === 'development' ? Inspector : Fr
 
 const basename = (process.env.NODE_ENV === 'production' && process.env.BASE_NAME) || '/'
 
-console.log(basename, 'basename')
-
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <InspectorWrapper keys={['control', 'shift', 'f']}>

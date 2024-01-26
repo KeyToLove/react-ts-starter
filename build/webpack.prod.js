@@ -11,6 +11,7 @@ const CompressionPlugin = require('compression-webpack-plugin')
 
 module.exports = merge(commonConfig, {
   mode: 'production', // 生产模式,会开启tree-shaking和压缩代码,以及其他优化
+  devtool: 'cheap-module-source-map',
   plugins: [
     new CopyPlugin({
       patterns: [
