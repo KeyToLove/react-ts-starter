@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const isDev = process.env.NODE_ENV === 'development'
 
+/** @type {import('webpack').Configuration} */
 module.exports = {
   entry: path.join(__dirname, '../src/index.tsx'),
   output: {

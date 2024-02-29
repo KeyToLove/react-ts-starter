@@ -9,6 +9,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 
+/** @type {import('webpack').Configuration} */
 module.exports = merge(commonConfig, {
   mode: 'production', // 生产模式,会开启tree-shaking和压缩代码,以及其他优化
   devtool: 'cheap-module-source-map',

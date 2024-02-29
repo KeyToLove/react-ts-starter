@@ -6,6 +6,7 @@ const commonConfig = require('./webpack.common.js')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const { launchEditorMiddleware } = require('react-dev-inspector/plugins/webpack')
 // 合并公共配置,并添加开发环境配置
+/** @type {import('webpack').Configuration} */
 module.exports = merge(commonConfig, {
   mode: 'development',
   devtool: 'source-map',
